@@ -39,6 +39,28 @@ nav a:hover{
     color: rgb(15, 122, 172);
     
 }
+main{
+    width: 940px;
+    margin: 0 auto;
+    padding:  50px;
+}
+form{
+    margin:  40px 0 ;
+
+
+}
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px ;
+}
+form input{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px ;
+    border-radius: 4px; /* arredondar a borda do imput */
+    width: 50%; /* largura do imput */
+}
 
 
 
