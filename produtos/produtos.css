@@ -22,6 +22,7 @@ nav{
 
 }
 
+
 nav li {
     display: inline;
     margin:  0 0 0 15px;
@@ -33,6 +34,10 @@ nav a {
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+}
+nav a:hover{
+    color: rgb(15, 122, 172);
+    
 }
 
 .produtos {
@@ -61,6 +66,21 @@ nav a {
     border: 2px solid #000000;
     border-radius: 15px;
 }
+ .produtos li:hover{
+     border-color: rgb(15, 122, 172) ;
+ }
+
+ .produtos li:hover h2{
+     font-size: 35px;
+ }
+
+ .produtos li:active{
+     border-color: red;
+
+ }
+
+
+
 .produtos h2{
     font-size: 30px;
     font-weight: bold;
