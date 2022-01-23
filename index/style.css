@@ -1,51 +1,219 @@
-#banner {
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #19adc7;
+	text-decoration: underline;
+}
+
+
+footer {
+	text-align: center;
+	background: url("/produtos/img/bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+main {
+	
+}
+
+form {
+	margin: 40px 0;
+}
+
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+
+
+.banner {
 	width:100%;
 }
 
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	text-shadow: 2px 2px blue ;
+}
 
+
+
+.titulo-principal:first-letter{ /* marca a primeira letra para aplicar o estilo */
+	font-weight: bold;
+}
 
 .principal{
-	background: #CCCCCC;
-	padding: 30px;
+	padding: 3em 0;
+	background: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+
+
+
 }
 
-.titulo-principal {
-	padding-left: 20px;
+.principal p h2 {
+	margin: 0 0 1em;
+	
+	
+	
 }
 
-.titulo-centralizado {
-	text-align: center
+.principal strong {
+	font-weight: bold;
 }
 
-p {
-	text-align: center;
+.principal em {
+	font-style: italic;
 }
 
-#missao {
-	font-size: 20px
+.utensilios {
+	width: 20%  ;
+	float: left;
+	margin: 0 20px 20px 0;
 }
 
-em strong {
-	color: #FF0000;
-}
 
-.itens {
-	font-style: italic
+.conteudoBeneficios{
+	width:  640px;
+	margin: 0 auto;
 }
-
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
-}
-
-ul {
+.listaBeneficios{
+	width: 40%;
 	display: inline-block;
 	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+	
+
+}
+
+.itens{
+	line-height: 1.5;
+
+}
+.itens:before{ /* adiciona item antes de qualquer conteudo */
+
+	content: "✭";
+
+
+}
+
+/*.itens:first-child{ /* seleciona o primeiro elemento da lista para ser aplicado 
+	font-weight: bold;
+}
+*/
+
+
+
+
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+
 }
 
 .imagembeneficios {
-	width: 50%;
+	width: 60%;
+	opacity: 0.80;
+	transition: 500ms;
+	box-shadow: 10px 10px 10px rgb(82, 71, 71) ;
+	
+	
 }
 
+.imagembeneficios:hover{
+
+	opacity: 100%;
+}
+
+
+
+.mapa{
+	padding: 3em 0;
+
+	background: linear-gradient(#fafafa,#888888);
+
+
+}
+.mapaConteudo{
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+.mapa p{
+	margin: 0 0 2em;
+	text-align: center;
+
+
+}
+
+.video {
+	width: 100%;
+	margin: 2em auto;
+
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudoBeneficios, .video{
+        width: auto;
+    };
+
+	h1 {
+		text-align: center;
+	};
+	nav {
+		position: static;
+	};
+	.listaBeneficios, .imagembeneficios{
+		width: 100%;
+	}
+    
+}
