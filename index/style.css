@@ -48,3 +48,8 @@ ul {
 .imagembeneficios {
 	width: 50%;
 }
+.ScrollStyle
+{
+    max-height: 150px;
+    overflow-y: scroll;
+}
